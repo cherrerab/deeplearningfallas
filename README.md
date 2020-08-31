@@ -19,4 +19,4 @@ Si el repositorio se ha clonado correctamente, notará que en la carpeta de arch
 
 De este modo es posible importar las funciones y utilidades contenidas dentro del repositorio:
 
-`from utils._tools import *`
+`>>> from utils._tools import *`
