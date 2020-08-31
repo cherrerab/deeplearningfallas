@@ -6,4 +6,4 @@ Este repositorio contiene los talleres prácticos y el material complementario d
 
 https://colab.research.google.com/notebooks/welcome.ipynb
 
-Dentro de este repositorio podrá encontrar los notebooks (\*.ipynb) de los distintos workshops a realizar a lo largo del curso. Descarguelos y ábralos dentro de su propia sesión de Colab (Abrir bloc de notas).
+Dentro de este repositorio podrá encontrar los notebooks (\*.ipynb) de los distintos workshops a realizar a lo largo del curso. Descárguelos y ábralos dentro de su propia sesión de Colab (Abrir bloc de notas).
