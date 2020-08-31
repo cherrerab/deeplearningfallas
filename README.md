@@ -12,3 +12,7 @@ Dentro de este repositorio podrá encontrar los notebooks (\*.ipynb) de los dist
 En caso de requerir importar archivos y/o elementos de este repositorio a un entorno de Google Colab, puede clonarlo directamente mediante:
 
 `! git clone https://github.com/cherrerab/deeplearningfallas.git`
+
+Si el repositorio se ha clonado correctamente, notará que en la carpeta de Archivos `\content\` se habrá creado el directorio `deeplearningfallas`. Para utilizar este directorio dentro de la sesión, utilice el siguiente comando:
+
+`%cd \content\deeplearningfallas`
