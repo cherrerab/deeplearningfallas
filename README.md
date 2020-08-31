@@ -9,6 +9,6 @@ https://colab.research.google.com/notebooks/welcome.ipynb
 Dentro de este repositorio podrá encontrar los notebooks (\*.ipynb) de los distintos workshops a realizar a lo largo del curso. Descárguelos y ábralos dentro de su propia sesión de Colab.
 
 ## Clonar Repositorio GitHub
-En caso de requerir importar archivos y/o elementos de este repositorio a un entorno de Google Colab, puede clonarlo mediante:
+En caso de requerir importar archivos y/o elementos de este repositorio a un entorno de Google Colab, puede clonarlo directamente mediante:
 
 `! git clone https://github.com/cherrerab/deeplearningfallas.git`
