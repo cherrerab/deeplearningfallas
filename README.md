@@ -17,6 +17,6 @@ Si el repositorio se ha clonado correctamente, notará que en la carpeta de arch
 
 `%cd \content\deeplearningfallas`
 
-De este modo es posible importar las funciones y utilidades contenidas dentro del repositorio:
+De este modo será posible importar las funciones y utilidades contenidas dentro del repositorio:
 
 `>>> from utils._tools import *`
