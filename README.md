@@ -16,3 +16,7 @@ En caso de requerir importar archivos y/o elementos de este repositorio a un ent
 Si el repositorio se ha clonado correctamente, notará que en la carpeta de archivos `\content\` se habrá creado el directorio `deeplearningfallas`. Para utilizar este directorio dentro de la sesión, utilice el siguiente comando:
 
 `%cd \content\deeplearningfallas`
+
+De este modo es posible importar las funciones y utilidades contenidas dentro del repositorio:
+
+`from utils._tools import *`
