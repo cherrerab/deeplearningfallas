@@ -9,3 +9,5 @@ La Machinery Failure Prevention Technology es una organización orientada a la i
 Mediante este workshop aprenderá el framework clásico de exploración, análisis y preprocesamiento de bases de datos. Estos pasos son fundamentales para desarrollar con éxito cualquier proyecto de Data Science y Deep Learning.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cherrerab/deeplearningfallas/blob/master/workshop_01/workshop_01.ipynb)
+
+[![Open In Youtube](https://raw.githubusercontent.com/cherrerab/deeplearningfallas/master/workshop_01/bin/auxvid.png)](https://youtu.be/p483_exDlVY)
