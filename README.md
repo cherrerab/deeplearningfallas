@@ -33,3 +33,5 @@ Mediante este workshop aprenderá el framework clásico de exploración, anális
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cherrerab/deeplearningfallas/blob/master/workshop_01/workshop_01.ipynb)
 
+[![HOLA](https://raw.githubusercontent.com/cherrerab/deeplearningfallas/master/workshop_01/bin/video.png)](https://youtu.be/p483_exDlVY)
+
