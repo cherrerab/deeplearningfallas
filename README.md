@@ -40,4 +40,4 @@ Continuando con el procesamiento de datos del workshop anterior, en esta oportun
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cherrerab/deeplearningfallas/blob/master/workshop_02/workshop_02.ipynb)
 
-[![Open In Youtube](https://raw.githubusercontent.com/cherrerab/deeplearningfallas/master/workshop_02/bin/auxvid.png)](https://youtu.be/kDrmyoKVmJE)
+[![Open In Youtube](https://raw.githubusercontent.com/cherrerab/deeplearningfallas/master/workshop_02/bin/auxvid_2.png)](https://youtu.be/kDrmyoKVmJE)
