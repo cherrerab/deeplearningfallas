@@ -53,7 +53,7 @@ def get_time_windows(data, nperwd, nleap):
 # ----------------------------------------------------------------------------
 def plot_confusion_matrix(Y_true, Y_pred, target_names,
                           title='Confusion matrix',
-                          cmap=None, normalize=False,figsize=(5,5)):
+                          cmap=None, normalize=False):
     
     """
     given the true (Y_true) and the predicted (Y_pred) labels,
@@ -89,7 +89,7 @@ def plot_confusion_matrix(Y_true, Y_pred, target_names,
     if cmap is None:
         cmap = plt.get_cmap('Blues')
     
-    plt.figure(figsize=figsize)
+    plt.figure()
     plt.imshow(cm, interpolation='nearest', cmap=cmap)
     plt.title(title)
     plt.colorbar()
@@ -146,7 +146,7 @@ def plot_loss_function(train_info, figsize=(5,5)):
     plt.legend(['train', 'validation'], loc='upper right')
     plt.show()
  
-  # ----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 def extract_features(x):
     """
     -> np.array
@@ -200,3 +200,55 @@ def extract_features(x):
     # concatenar features
     out = np.hstack( [mean, var, rms, peak, valley, p2p, cf, ktsis, skwn] )
     return out
+
+# ----------------------------------------------------------------------------
+def plot_img_samples(dataset, index, grid=None,
+                     figsize=(5,5), title=''):
+    """
+    -> None
+    
+    this function concatenates and plot the index samples of the dataset, 
+    following the rows and columns of the grid parameter.
+    
+    :param np.array dataset:
+        dataset containing the image samples.
+        it is assumed a (samples, height, width) shape.
+    :param array-like index:
+        list of the samples indexes to plot.
+    :param tuple grid:
+        (rows, cols) of images to follow in the concatenation.
+        if None, it is assumed only a row of images.
+        
+    :returns:
+        None.
+    """
+    
+    index = np.array( index )
+    
+    rows, cols = grid
+    _, h, w = dataset.shape
+    
+    # verificar que la cantidad de imagenes coincide con el grid
+    assert index.size >= rows*cols
+    
+    # concatenar imágenes
+    img = np.zeros( (rows*h, cols*w) )
+    
+    for i, idx in enumerate(index):
+        
+        # extraer imagen del dataset
+        image = dataset[idx, :, :]
+        image = np.reshape( image, (h, w) )
+        
+        # agregar imagen a img
+        k, j = i%cols, i//cols
+        img[j*h:(j+1)*h, k*w:(k+1)*w] = image
+        
+    # plotear
+    plt.figure(figsize=figsize)
+    plt.imshow(img, cmap='magma')
+    plt.title(title)
+        
+    
+        
+    
