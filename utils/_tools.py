@@ -53,7 +53,8 @@ def get_time_windows(data, nperwd, nleap):
 # ----------------------------------------------------------------------------
 def plot_confusion_matrix(Y_true, Y_pred, target_names,
                           title='Confusion matrix',
-                          cmap=None, normalize=False):
+                          cmap=None, normalize=False,
+                          figsize=(5,5)):
     
     """
     given the true (Y_true) and the predicted (Y_pred) labels,
@@ -89,7 +90,7 @@ def plot_confusion_matrix(Y_true, Y_pred, target_names,
     if cmap is None:
         cmap = plt.get_cmap('Blues')
     
-    plt.figure()
+    plt.figure(figsize=figsize)
     plt.imshow(cm, interpolation='nearest', cmap=cmap)
     plt.title(title)
     plt.colorbar()
