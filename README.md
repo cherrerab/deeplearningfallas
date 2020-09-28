@@ -38,7 +38,7 @@ Mediante este workshop aprenderá el framework clásico de exploración, anális
 ## Workshop MFPT Classification Model
 Continuando con el procesamiento de datos del workshop anterior, en esta oportunidad aprenderá como construir y configurar un modelo de clasificación de Deep Learning mediante TensorFlow y Keras. Entender el framework de estas herramientas le permitirá seguir avanzando con modelos y arquitecturas de mayor complejidad a medida que estas sean introducidas en el curso.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cherrerab/deeplearningfallas/blob/master/workshop_02/workshop_02.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cherrerab/deeplearningfallas/blob/master/workshop_02/workshop_02_pauta.ipynb)
 
 [![Open In Youtube](https://raw.githubusercontent.com/cherrerab/deeplearningfallas/master/workshop_02/bin/auxvid_2.png)](https://youtu.be/kDrmyoKVmJE)
 
