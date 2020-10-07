@@ -47,4 +47,4 @@ Entre los métodos que permiten llevar a cabo una inspección visual de la condi
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cherrerab/deeplearningfallas/blob/master/workshop_03/workshop_03.ipynb)
 
-[![Open In Youtube](https://raw.githubusercontent.com/cherrerab/deeplearningfallas/master/workshop_02/bin/auxvid_2.png)](https://youtu.be/xk-wfL7W8D0)
+[![Open In Youtube](https://raw.githubusercontent.com/cherrerab/deeplearningfallas/master/workshop_03/bin/auxvid.png)](https://youtu.be/xk-wfL7W8D0)
