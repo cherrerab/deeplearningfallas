@@ -247,7 +247,7 @@ def plot_img_samples(dataset, index, grid=None,
         
     # plotear
     plt.figure(figsize=figsize)
-    plt.imshow(img, cmap='magma')
+    plt.imshow(img, cmap='viridis')
     plt.title(title)
         
     
