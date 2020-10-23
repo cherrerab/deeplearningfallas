@@ -241,6 +241,9 @@ def plot_img_samples(dataset, index, grid=None,
         image = dataset[idx, :, :]
         image = np.reshape( image, (h, w) )
         
+        vmin, vmax = np.min(image, axis=None), np.max(image, axis=None)
+        image = (image - vmin)/(vmax - vmin)
+        
         # agregar imagen a img
         k, j = i%cols, i//cols
         img[j*h:(j+1)*h, k*w:(k+1)*w] = image
