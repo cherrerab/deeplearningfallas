@@ -242,7 +242,11 @@ def plot_img_samples(dataset, index, grid=None,
         image = np.reshape( image, (h, w) )
         
         vmin, vmax = np.min(image, axis=None), np.max(image, axis=None)
-        image = (image - vmin)/(vmax - vmin)
+        
+        if (vmax - vmin)!=0.0:
+            image = (image - vmin)/(vmax - vmin)
+        else:
+            image = np.zeros_like(image)
         
         # agregar imagen a img
         k, j = i%cols, i//cols
@@ -250,7 +254,7 @@ def plot_img_samples(dataset, index, grid=None,
         
     # plotear
     plt.figure(figsize=figsize)
-    plt.imshow(img, cmap='viridis')
+    plt.imshow(img, cmap='magma')
     plt.title(title)
         
     
