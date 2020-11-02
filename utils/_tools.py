@@ -259,7 +259,7 @@ def plot_img_samples(dataset, index, grid=None,
     plt.title(title)
 
 # ----------------------------------------------------------------------------    
-def plot_predict_scatter(Y_true, Y_pred, eps=0.05, title='', **kargs):
+def plot_predict_scatter(Y_true, Y_pred, eps=0.05, figsize=(12, 5), title='', **kargs):
     """
     -> None
     
@@ -304,8 +304,7 @@ def plot_predict_scatter(Y_true, Y_pred, eps=0.05, title='', **kargs):
     colors = cmap( (z - z_min)/(z_max - z_min) )
     
     # inicializar plot
-    fig = plt.figure()
-    fig.set_size_inches(6, 3)
+    fig = plt.figure(figsize=figsize)
     
     # plotear Y_true vs Y_pred
     plt.scatter(Y_true, Y_pred, c=colors,**kargs)
