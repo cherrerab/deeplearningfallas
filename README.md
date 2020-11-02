@@ -56,3 +56,9 @@ En ocasiones, no resulta del todo eficiente entrenar un modelo convolucional des
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cherrerab/deeplearningfallas/blob/master/workshop_04/workshop_04.ipynb)
 
 [![Open In Youtube](https://raw.githubusercontent.com/cherrerab/deeplearningfallas/master/workshop_04/bin/auxvid.png)](https://youtu.be/PVufdn9dwx8)
+
+## Workshop C-MAPSS Dataset
+El Comercial Modular Aero-Propulsion System Simulation (C-MAPSS) es un software desarrollado por NASA como ambiente de simulación de motores de reacción tipo turbofán. Así, esta herramienta permite la implementación y evaluación de algoritmos de control y diagnóstico sobre la operación de un motor turbofán de 90.000 lbf de propulsión. En este workshop implementaremos un modelo recurrente mediante `tensorflow` y `keras` para la predicción del RUL de turbofanes de aviación, a partir de la serie temporal de mediciones de sus sensores.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cherrerab/deeplearningfallas/blob/master/workshop_05/workshop_05.ipynb)
+
