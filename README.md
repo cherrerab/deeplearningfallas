@@ -62,3 +62,4 @@ El Comercial Modular Aero-Propulsion System Simulation (C-MAPSS) es un software 
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cherrerab/deeplearningfallas/blob/master/workshop_05/workshop_05.ipynb)
 
+[![Open In Youtube](https://raw.githubusercontent.com/cherrerab/deeplearningfallas/master/workshop_05/bin/auxvid.png)](https://youtu.be/OVQxnClnmO8)
