@@ -63,3 +63,9 @@ El Comercial Modular Aero-Propulsion System Simulation (C-MAPSS) es un software 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cherrerab/deeplearningfallas/blob/master/workshop_05/workshop_05.ipynb)
 
 [![Open In Youtube](https://raw.githubusercontent.com/cherrerab/deeplearningfallas/master/workshop_05/bin/auxvid.png)](https://youtu.be/OVQxnClnmO8)
+
+## Workshop C-MAPSS Anomaly Detection Autoencoder
+La detección de anomalías (Anomaly Detection) sobre sistemas con una alta dimensionalidad de datos, es un problema de particular interés tanto en el campo del Machine Learning como también en diversas áreas de la ingeniería e industria. En particular, los algoritmos de detección de anomalías resultan de suma relevancia a la hora de desarrollar e implementar sistemas de monitoreo de equipos o activos industriales de mayor complejidad. En este workshop volveremos a utilizar el C-MAPSS Dataset de la NASA para desarrollar un detector de anomalías mediante un Autoencoder. Así, en este caso reconfiguraremos los datos de las simulaciones ya no para predecir el tiempo de vida remanente o Remaining Useful Life (RUL) de cada turbina, sino para clasificar si la turbina se encuentra en un estado de operación nominal o en uno de degradación crítica.
+
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cherrerab/deeplearningfallas/blob/master/workshop_06/workshop_06.ipynb)
