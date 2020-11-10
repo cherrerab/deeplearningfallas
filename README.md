@@ -69,3 +69,5 @@ La detección de anomalías (Anomaly Detection) sobre sistemas con una alta dime
 
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cherrerab/deeplearningfallas/blob/master/workshop_06/workshop_06.ipynb)
+
+[![Open In Youtube](https://raw.githubusercontent.com/cherrerab/deeplearningfallas/master/workshop_05/bin/auxvid.png)](https://youtu.be/iwr5JfoJQVs)
