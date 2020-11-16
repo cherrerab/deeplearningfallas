@@ -71,3 +71,9 @@ La detección de anomalías (Anomaly Detection) sobre sistemas con una alta dime
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cherrerab/deeplearningfallas/blob/master/workshop_06/workshop_06.ipynb)
 
 [![Open In Youtube](https://raw.githubusercontent.com/cherrerab/deeplearningfallas/master/workshop_05/bin/auxvid.png)](https://youtu.be/iwr5JfoJQVs)
+
+
+## Workshop C-MAPSS Anomaly Detection Variational Autoencoder
+Si bien los Autoencoders son capaces de reducir la dimensionalidad de una determinada estructura de datos a un vector latente mediante su etapa de `encoding`, estos tienen el problema de que finalmente procesan o codifican cada sample de manera independiente. En este sentido, considerando que todos los datos o samples utilizados para el `training` del modelo son de la misma clase o describen el mismo sistema, nos gustaría que el `encoding` del vector latente sea capaz de capturar la distribución de los datos en su nueva representación. Aquí es donde entran los Variational Autoencoders (VAE) en los cuales, en términos generales, se impone (forzadamente) una distribución normal sobre cada uno de los componentes del vector latente.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cherrerab/deeplearningfallas/blob/master/workshop_07/workshop_07.ipynb)
