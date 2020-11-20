@@ -321,7 +321,118 @@ def plot_predict_scatter(Y_true, Y_pred, eps=0.05, figsize=(12, 5), title='', **
     plt.ylabel('Predicted RUL')
     plt.show()
     return None
-        
+
+# ----------------------------------------------------------------------------    
+def plot_RUL_scatter(Y_true, Y_pred, eps=0.05, figsize=(12, 5), title='', **kargs):
+    """
+    -> None
     
-        
+    Plotea la disperción entre Y_true e Y_pred (este último correspondiente
+    a la predicción realizada por el modelo) con el fin de visualizar el 
+    desempeño del modelo para estimar el RUL de la turbina.
     
+    :param DataFrame Y_true:
+        set de datos reales con los cuales comparar las estimaciones.
+    :param DataFrame Y_pred:
+        set de datos obtenidos con el modelo.
+    :param float eps:
+        radio que determina la vecindad de los puntos.
+    :param str title:
+        titulo a poner en el plot.
+        
+    :returns:
+        None
+    """
+    
+    # reordenar datos
+    Y_true = np.array(Y_true).flatten()
+    Y_pred = np.array(Y_pred).flatten()
+    
+    # calcular densidad
+    z = np.zeros_like(Y_true)
+    
+    for i in range( Y_true.shape[0] ):
+        # distancia
+        dist = np.sqrt( (Y_true[i] - Y_true)**2 + (Y_pred[i] - Y_pred)**2 )
+        # cantidad de vecinos
+        z[i] = np.sum( dist < eps )
+        
+    # ordenar datos
+    idx = np.argsort(z)
+    Y_true, Y_pred, z = Y_true[idx], Y_pred[idx], z[idx]
+    
+    # obtener colores
+    cmap = cm.get_cmap('jet')
+    z_min, z_max = np.min(z), np.max(z)
+    
+    colors = cmap( (z - z_min)/(z_max - z_min) )
+    
+    # inicializar plot
+    fig = plt.figure(figsize=figsize)
+    
+    # plotear Y_true vs Y_pred
+    plt.scatter(Y_true, Y_pred, c=colors,**kargs)
+    
+    # obtener máximos y mínimos
+    pred_min, pred_max = np.min(Y_pred), np.max(Y_pred)
+    true_min, true_max = np.min(Y_true), np.max(Y_true)
+    
+    # plotear linea 1:1
+    plt.plot([true_min, true_max], [pred_min, pred_max], c='k')
+    
+    # añadir limites
+    plt.xlim([true_min, true_max])
+    plt.ylim([pred_min, pred_max])
+    
+    #plt.title(title)
+    plt.xlabel('True RUL')
+    plt.ylabel('Predicted RUL')
+    plt.show()
+    return None
+
+# ----------------------------------------------------------------------------    
+def plot_RUL_sorted(Y_true, Y_pred, figsize=(12, 5), title='', **kargs):
+    """
+    -> None
+    
+    Plotea una comparación ordenada entre Y_true e Y_pred (este último
+    corresponditente a la predicción realizada por el modelo) con el fin de
+    visualizar el desempeño del modelo para estimar el RUL de la turbina.
+    
+    Plotea la disperción entre Y_true e Y_pred (este último correspondiente
+    a la predicción realizada por el modelo) con el fin de visualizar el 
+    desempeño del modelo para estimar el RUL de la turbina.
+    
+    :param DataFrame Y_true:
+        set de datos reales con los cuales comparar las estimaciones.
+    :param DataFrame Y_pred:
+        set de datos obtenidos con el modelo.
+    :param str title:
+        titulo a poner en el plot.
+        
+    :returns:
+        None
+    """
+    
+    # reordenar datos
+    Y_true = np.array(Y_true).flatten()
+    Y_pred = np.array(Y_pred).flatten()
+    
+    # sorting
+    sort_idx = np.argsort(Y_true)
+    Y_true = Y_true[sort_idx]
+    Y_pred = Y_pred[sort_idx]
+    
+    # plot
+    fig = plt.figure(figsize=figsize)
+    
+    plt.plot(Y_true, linestyle='-', linewidth=0.5, marker='o', markersize=3, label = 'True')
+    plt.plot(Y_pred, linestyle='-', linewidth=0.5, marker='^', markersize=3, label = 'Prediction')
+    
+    #plt.title(title)
+    plt.xlabel('Samples')
+    plt.ylabel('RUL')
+    plt.grid(True)
+    plt.show()
+    
+    return None
