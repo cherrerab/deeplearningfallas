@@ -80,3 +80,6 @@ Si bien los Autoencoders son capaces de reducir la dimensionalidad de una determ
 
 [![Open In Youtube](https://raw.githubusercontent.com/cherrerab/deeplearningfallas/master/workshop_07/bin/auxvid_1.png)](https://youtu.be/3JFGHw6dBAE)
 [![Open In Youtube](https://raw.githubusercontent.com/cherrerab/deeplearningfallas/master/workshop_07/bin/auxvid_2.png)](https://youtu.be/IdaVZZsbpw4)
+
+## Workshop Generative Adversarial Networks
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cherrerab/deeplearningfallas/blob/master/workshop_08/workshop_08.ipynb)
