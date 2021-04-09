@@ -82,6 +82,10 @@ Si bien los Autoencoders son capaces de reducir la dimensionalidad de una determ
 [![Open In Youtube](https://raw.githubusercontent.com/cherrerab/deeplearningfallas/master/workshop_07/bin/auxvid_2.png)](https://youtu.be/IdaVZZsbpw4)
 
 ## Workshop Generative Adversarial Networks
+En términos simples, un modelo GAN se compone de dos modelos independientes: el `Discriminador` y, por supuesto, el `Generador`. Por un lado, el `Discriminador`, como su nombre lo indica, está diseñado para discriminar las imágenes creadas artificalmente por el `Generador` de las imágenes reales contenidas en el dataset. Así, el `Discriminador` procesa secuencialmente la información contenida en la imagen de entrada mediante una arquitectura Conv2D, para finalmente retornar la etiqueta de clasificación de la imagen (`real` o `fake`) mediante una capa softmax.
+
+Por el otro lado, el `Generador` está diseñado para construir imágenes a partir de un vector de ruido uniforme `NOISE_VECTOR`. Por supuesto, el tamaño de este vector o `NOISE_DIM` será otro de los hiperparámetros que constituirá el modelo. De este modo, de manera inversa a un modelo Convolucional convencional, el `Generador` procesa este vector de ruido mediante un arquitectura Conv2DTranspose con la finalidad de ir construyendo secuencialmente la imagen RGB de salida.
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cherrerab/deeplearningfallas/blob/master/workshop_08/workshop_08.ipynb)
 
 
